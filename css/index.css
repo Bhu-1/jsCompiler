@@ -1,0 +1,35 @@
+body{
+    font-family: 'Lora', serif;
+}
+#user{
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+
+}
+/* header css */
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: #4a4343;
+}
+#run{
+    width: 105px;
+    height: 45px;
+    background-color: greenyellow;
+    border: 0px;
+    font-size: 20px;
+    margin-top: 23px;
+    font-family: 'Lora', serif;
+}
+.heading{
+    color: white;
+}
+/* header css ends */
+/* navBar start */
+.navBar{
+    display: flex;
+    flex-flow: row wrap;
+}
+/* navBar ends */
