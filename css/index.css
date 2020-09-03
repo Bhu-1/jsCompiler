@@ -1,5 +1,6 @@
-body{
+body,h4{
     font-family: 'Lora', serif;
+    margin: 0px;
 }
 #user{
     width: 400px;
@@ -27,9 +28,25 @@ body{
     color: white;
 }
 /* header css ends */
-/* navBar start */
+/* navBar start for mobile view */
+
 .navBar{
     display: flex;
     flex-flow: row wrap;
+    background-color: #171616;
+    color: white;
+    justify-content: center;
 }
-/* navBar ends */
+.lang{
+    padding: 10px;
+    background-color: #353333;
+    color: white;
+    margin-top: 2%;
+    margin-right: 1px;
+}
+@media(min-width : 769px){
+    .navBar{
+        display: none;
+    }
+}
+/* navBar ends for mobile view*/
