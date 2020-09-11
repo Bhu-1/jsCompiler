@@ -3,27 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- header starts -->
+    <header class="header">
+        <div class="heading"><h1>JS-Pencil</h1></div>
+        <div class="runButton"><button id="run" onclick="compiler()">Run</button></div>
+    </header>
+    <!-- header ends -->
+    <!-- navBar starts for mobile view -->
+    <nav class="navBar">
+        <div class="lang" id="html-btn" onclick="showHtml()">
+            <h4>HTML</h4>
+        </div>
+        <div class="lang" id="css-btn" onclick="showCss()">
+            <h4>CSS</h4>
+        </div>
+        <div class="lang " id="js-btn" onclick="showJs()">
+            <h4>JavaScript</h4>
+        </div>
+        <div class="lang" id="result-btn">
+            <h4>Result</h4>
+        </div>
+    </nav>
+    <!-- navBar ends for mobile view -->
+    <!-- Container starts here for mobile -->
     <div class="container">
-        <div class="htmlarea">
-            <textarea name="" id="html-code" cols="30" rows="10"></textarea>
+        <div class="text" id="html-container">
+            <div class="container-header"><h4>HTML</h4>
+            </div>
+            <textarea name="" id="html-code"></textarea>
         </div>
-        <div class="cssarea">
-            <textarea name="" id="css-code" cols="30" rows="10"></textarea>
+        <div class="text" id="css-container"> 
+            <div class="container-header"><h4>CSS</h4>
+            </div>
+            <textarea name="" id="css-code"></textarea>
         </div>
-        <div class="jsarea">
-            <textarea name="" id="js-code" cols="30" rows="10"></textarea>
+        <div class="text" id="js-container">
+            <div class="container-header"><h4>JavaScript</h4>
+            </div>
+            <textarea name="" id="js-code"></textarea>
         </div>
-        <div>
-            <button onclick="compiler()">click here</button>
+        <div class="text text-web">
+            <div class="container-header"><h4>Output</h4></div>
+            <iframe id="user"></iframe>
         </div>
     </div>
-    <div class="output-screen">
-        <iframe id="user"></iframe>
-    </div>
+    <!-- Container ends here mobile-->
+    <!-- Container for laptop view -->
+    
+    <!-- Container for laptop view -->
     <script src="js/output.js"></script>
 </body>
 </html>

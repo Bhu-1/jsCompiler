@@ -2,12 +2,6 @@ body,h4{
     font-family: 'Lora', serif;
     margin: 0px;
 }
-#user{
-    width: 400px;
-    height: 300px;
-    border: 1px solid black;
-
-}
 /* header css */
 .header{
     display: flex;
@@ -22,7 +16,11 @@ body,h4{
     border: 0px;
     font-size: 20px;
     margin-top: 23px;
+    border-radius: 7px;
     font-family: 'Lora', serif;
+}
+.runButton{
+    margin-right: 2px;
 }
 .heading{
     color: white;
@@ -50,3 +48,63 @@ body,h4{
     }
 }
 /* navBar ends for mobile view*/
+/* Container css starts here */
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    
+    background-color: #4a4343;
+}
+textarea{
+    width : 100%;
+    padding: 0px;
+    border: none;
+    background-color: #171616;
+    color: rgb(89, 167, 167);
+}
+.container-header{
+    background-color: #171616;
+    color: white;
+    text-align: right;
+}
+#user{
+    width: 100%;
+    height: 38vh;
+    background-color: white;
+    border: none;
+}
+@media only screen and (max-width : 769px){
+    .text{
+        margin-top: 2%;
+        width: 100%;
+    }
+    textarea{
+        height: 35vh;
+    }
+    #css-container, #js-container{
+        display: none;
+    }    
+}
+@media only screen and (min-width : 769px){
+    #css-container, #js-container,#html-container{
+        display: block !important;
+    }      
+    .container{
+        justify-content: space-between;
+    }
+    .text{
+        flex-basis: 33%;
+    }
+    .text-web{
+        flex-basis: 100%;
+    }
+    textarea{
+        height: 40vh;
+    }
+    #user{
+        height: 41vh;
+    }
+}
+
+/* Container css ends here */
+/* container for web */
