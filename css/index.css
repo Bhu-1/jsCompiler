@@ -61,11 +61,14 @@ textarea{
     border: none;
     background-color: #171616;
     color: rgb(89, 167, 167);
+    outline-color: blanchedalmond;
+    resize: none;
 }
 .container-header{
     background-color: #171616;
     color: white;
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
 }
 #user{
     width: 100%;
@@ -108,3 +111,6 @@ textarea{
 
 /* Container css ends here */
 /* container for web */
+.refresh-icon:hover{
+    font-size: 18px;
+}

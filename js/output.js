@@ -6,7 +6,15 @@ function compiler(){
         
         document.getElementById("user").srcdoc=html +  "<style>" + css +"</style>" +"<script>" + js +"</script>"
 }
-
+function clrScrnjs(){
+    document.getElementById("js-code").value=""
+}
+function clrScrncss(){
+    document.getElementById("css-code").value=""
+}
+function clrScrnhtml(){
+    document.getElementById("html-code").value=""
+}
 function showHtml(){
         x = document.getElementById("html-container")
         y = document.getElementById("css-container")
